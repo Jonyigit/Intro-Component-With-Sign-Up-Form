@@ -1,0 +1,27 @@
+.header {
+    @apply px-[30px] pt-[40px] mb-[127px];
+}
+
+.container {
+    @apply mx-auto w-full max-w-[1110px] flex justify-between;
+}
+
+.logo {
+    @apply text-[#FFFFFF] text-[32px] font-bold tracking-[-0.44px];
+}
+
+.navbar {
+    @apply max-w-[192.49px] w-full flex justify-between items-center;
+    img {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        @apply pt-[20px] mb-[300px];
+    }
+    .container {
+        @apply flex-col items-center gap-[20px];
+    }
+}

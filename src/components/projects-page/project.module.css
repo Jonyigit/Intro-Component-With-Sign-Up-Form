@@ -1,0 +1,35 @@
+.project {
+    @apply py-0 px-8 mb-[139px] min-h-screen;
+}
+
+.container {
+    @apply max-w-[1110px] mx-auto;
+}
+
+.titleProject {
+    @apply flex justify-between items-center mb-[80px];
+}
+
+.titleProject h1 {
+    @apply text-white text-[88px] font-bold leading-none tracking-[-2.5px];
+}
+
+.titleProject .btn {
+    @apply text-white text-[16px] font-bold tracking-[2.2px] border-b-2 border-[#4ee1a0] pb-2 transition-all duration-500 ease-in-out hover:text-[#4ee1a0];
+}
+
+.cards {
+    @apply grid grid-cols-2 gap-x-[30px] gap-y-[69px] min-h-screen;
+}
+
+@media (max-width: 768px) {
+    .project {
+        @apply px-[16px];
+    }
+    .cards {
+        @apply grid-cols-1 justify-center;
+    }
+    .titleProject h1 {
+        @apply text-[40px] tracking-[-1.14px];
+    }
+}

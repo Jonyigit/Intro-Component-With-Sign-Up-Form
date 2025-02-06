@@ -1,0 +1,18 @@
+.skills {
+    @apply p-[0px] px-[30px] mb-[140px];
+}
+
+.skills .container {
+    @apply max-w-[1110px] mx-auto grid grid-cols-3 gap-y-[58px] gap-x-[30px]  border-t border-white pt-[72px];
+}
+
+@media (max-width: 1234px) {
+    .skills .container {
+        @apply grid-cols-2 justify-center;
+    }
+}
+@media (max-width: 768px) {
+    .skills .container {
+        @apply grid-cols-1 items-center;
+    }
+}

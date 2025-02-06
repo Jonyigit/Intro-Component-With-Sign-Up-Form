@@ -1,0 +1,73 @@
+.card {
+    @apply flex flex-col gap-[14px];
+}
+
+.card h1 {
+    @apply text-white text-[48px] font-bold leading-[56px] tracking-[-1.5px];
+}
+
+.card p {
+    @apply text-[#d9d9d9] text-[18px] font-medium;
+}
+
+.projectCard {
+    @apply max-w-[540px] w-full h-auto select-none;
+}
+
+.projectCard img {
+    @apply mb-5;
+}
+
+.projectCard h3 {
+    @apply text-white text-[24px] font-bold mb-2;
+}
+
+.projectCard ul {
+    @apply flex gap-[18px];
+}
+
+.projectCard ul li {
+    @apply text-[#d9d9d9] text-[18px] font-medium leading-[28px];
+}
+
+.cardImg {
+    @apply relative;
+}
+
+.cardImg:hover .overlay {
+    @apply opacity-100;
+}
+
+.overlay {
+    @apply absolute bg-black bg-opacity-60 left-0 top-0 bottom-0 right-0 max-w-[540px] h-[400px] flex justify-center items-center opacity-0 transition-all duration-500 ease-in-out;
+}
+
+.overlay .btns {
+    @apply flex flex-col gap-12;
+}
+
+.btns button {
+    @apply text-white text-base font-bold tracking-widest border-b-2 border-[#4ee1a0] py-2 px-4 transition-all duration-500 ease-in-out;
+}
+
+.btns button:hover {
+    @apply text-[#4ee1a0];
+}
+
+@media (max-width: 768px) {
+    .card h1 {
+        @apply text-center text-[32px];
+    }
+    .card p {
+        @apply text-[16px] text-center;
+    }
+    .projectCard {
+        @apply max-w-[343px] w-full h-auto mx-auto;
+    }
+    .projectCard img {
+        @apply mb-5 w-[343px] h-[253px];
+    }
+    .overlay {
+        @apply hidden;
+    }
+}

@@ -1,0 +1,106 @@
+.footer {
+    @apply bg-[#242424] py-[84px] px-[30px];
+}
+
+.footer .container {
+    @apply max-w-[1110px] mx-auto;
+}
+
+.contactPage {
+    @apply flex justify-between items-start mb-[92px];
+}
+
+.content {
+    @apply max-w-[445px] w-full flex flex-col gap-[36px];
+}
+
+.content h1 {
+    @apply text-white text-[88px] font-extrabold tracking-[-2.5px];
+}
+
+.content p {
+    @apply text-[#d9d9d9] text-[18px] font-medium leading-[28px];
+}
+
+.contactPage form {
+    @apply flex flex-col max-w-[445px] w-full items-end gap-[32px];
+}
+
+form .input {
+    @apply w-full h-[43px] px-[24px] pb-[16px] bg-transparent outline-none text-white text-[16px] font-medium tracking-[-0.2px] border-b border-white;
+}
+
+form .errorInput {
+    @apply w-full h-[43px] px-[24px] pb-[16px] bg-transparent outline-none text-white text-[16px] font-medium tracking-[-0.2px] border-b border-[#FF6F5B];
+}
+
+form label {
+    @apply w-full flex flex-col gap-[5px] items-end;
+}
+
+form label .errorText {
+    @apply text-[#FF6F5B] text-[12px] font-[500] tracking-[-0.17px];
+}
+
+.input::placeholder {
+    @apply text-white opacity-[0.5];
+}
+
+form textarea {
+    @apply resize-none w-full h-[107px] px-[24px] bg-transparent outline-none text-white text-[16px] font-medium tracking-[-0.2px] border-b border-white;
+}
+
+form .submitBtn {
+    @apply text-white text-[16px] font-extrabold tracking-[2.2px] border-b-2 border-[#4ee1a0] pb-[10px] transition-all ease-in-out duration-[0.5s];
+}
+
+form .submitBtn:hover {
+    @apply text-[#4ee1a0];
+}
+
+.footerNavbar {
+    @apply max-w-[1110px] w-full flex justify-between items-center;
+}
+
+.footerNavbar h1 {
+    @apply text-white text-[32px] font-extrabold tracking-[-0.4px] cursor-pointer;
+}
+
+.footerNavbar .icons {
+    @apply flex justify-between items-center max-w-[192.49px] w-full;
+}
+
+.footerNavbar .icons img {
+    @apply cursor-pointer;
+}
+
+@media (max-width: 1234px) {
+    .contactPage {
+        @apply flex-col items-center gap-[48px];
+    }
+    .content {
+        @apply items-center gap-[20px];
+    }
+    .content h1 {
+        @apply leading-[72px];
+    }
+    .content p {
+        @apply text-center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        @apply px-[16px];
+    }
+    .content h1 {
+        @apply leading-[40px] text-[40px];
+    }
+    .content p {
+        @apply text-[16px];
+    }
+
+    .footerNavbar {
+        @apply flex-col gap-[20px];
+    }
+}

@@ -1,22 +1,14 @@
+import { Footer } from "./components/footer-page/footer";
+import { Header } from "./components/header/Header";
+import { Home } from "./components/home-page/Home";
+import { Project } from "./components/projects-page/project";
+import { Skills } from "./components/skills-page/skills";
 import "./styles/App.css";
-import { Form } from "./components/form";
 
 function App() {
     return (
         <>
-            <section className="intro-component">
-                <div className="container">
-                    <div className="content">
-                        <h1>Learn to code by watching others</h1>
-                        <p>
-                            See how experienced developers solve problems in
-                            real-time. Watching scripted tutorials is great, but
-                            understanding how developers think is invaluable.
-                        </p>
-                    </div>
-                    <Form />
-                </div>
-            </section>
+            <Header /> <Home /> <Skills /> <Project /> <Footer />
         </>
     );
 }
